@@ -1,11 +1,23 @@
 function isPalindrome(word) {
   // Write your algorithm here
+ const array1 = [...word]
+ console.log(array1)
+ const reversedArray = array1.reverse()
+ console.log(reversedArray)
+
+  if (word === reversedArray.join('')){
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
 */
-
+//if string is a palindrome 
+  // return true
+  // else return false
 /*
   Add written explanation of your solution here
 */
@@ -23,3 +35,4 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
